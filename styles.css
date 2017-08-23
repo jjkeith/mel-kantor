@@ -1,3 +1,35 @@
+.body {
+  margin: 0; }
 
+.header {
+  height: 30rem;
+  background: #333ba0;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333ba0, #f44380), url("https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/18722850_1567290799957373_5470051368725118976_n.jpg");
+  background-image: linear-gradient(to right, rgba(51, 59, 160, 0.75), rgba(244, 67, 128, 0.75)), url("https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/18722850_1567290799957373_5470051368725118976_n.jpg");
+  padding: 1rem;
+  position: relative; }
+
+.header__title {
+  color: #eee;
+  display: inline-block;
+  font-family: "Sofia", cursive;
+  font-size: 8rem;
+  margin: 1rem 0 0;
+  width: fit-content; }
+
+.header__headline {
+  color: #eee;
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  float: right;
+  width: 25%;
+  margin-right: 15%;
+  margin-top: 5rem; }
+
+section {
+  background-color: #eee;
+  height: 8000px; }
 
 /*# sourceMappingURL=styles.css.map */
