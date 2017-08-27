@@ -6,3 +6,5 @@
 
 ga('create', 'UA-75770141-1', 'auto');
 ga('send', 'pageview');
+
+window.dynCss.api.setBreakpoints([481],'@win-width');

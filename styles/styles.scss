@@ -1,0 +1,98 @@
+@import "custom-varaibles";
+@import "../bower_components/cutestrap/dist/scss/cutestrap";
+
+
+// Header styles
+
+.header {
+  color: $white;
+  background: $primary; /* fallback for old browsers */
+  background: -webkit-linear-gradient( to right, rgba( $primary, 0.7 ), rgba( $secondary, 0.7  ) ), url('https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/18722850_1567290799957373_5470051368725118976_n.jpg');
+  background-image: linear-gradient( to right, rgba( $primary, 0.7 ), rgba( $secondary, 0.7  ) ), url('https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/18722850_1567290799957373_5470051368725118976_n.jpg');
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.header__title {
+  font-family: $accent-font;
+  font-size: 5.6rem;
+  @media #{$medium-down} {
+    text-align: center;
+  }
+}
+
+
+.btn--link.btn--social-icons {
+  color: $white;
+  padding-left: 0;
+  &:first-child {
+    margin-left: 2rem;
+  }
+  &:hover {
+    color: $secondary-dark;
+  }
+}
+
+.header__headline {
+  padding: 4rem 2rem 2rem;
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+.btn--link.btn--header {
+  border: 1px solid $white;
+  border-radius: $border-radius;
+  color: $white;
+  font-family: $accent-font;
+  margin-bottom: 2rem;
+  &:hover {
+    background-color: rgba( $white, 0.15 );
+  }
+}
+
+// Body styles
+section {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.headline {
+  font-family: $accent-font;
+}
+
+.about {
+  img {
+    border-radius: $border-radius;
+    max-height: 50vh;
+  }
+}
+
+.facts__card {
+  border: 1px solid $gray5;
+  border-radius: 4px;
+  background-color: $gray6;
+  margin: 1.5rem;
+  padding: 1rem;
+  img {
+    border-radius: $border-radius;
+   -dyn-webkit-dyn-opacity: '@shouldAppear({when: @win-scrollTop, isHigherThan: @win-height/2})';
+  }
+  figcaption {
+    background-color: $white;
+    border: 1px solid $gray5;
+    font-family: $accent-font;
+    font-size: larger;
+    margin-top: 1rem;
+    padding: 2rem;
+    //text-transform: uppercase;
+  }
+}
+
+.description {
+  background-color: $primary-dark;
+  border-radius: $border-radius;
+  color: $white;
+}
